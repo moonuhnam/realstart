@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
               actions: [IconButton(onPressed: () {}, icon: Icon(Icons.notifications))],
               title: Text('가보자')),
           body: Container(
-            child: Text('화이팅'),
+            child: Text('화이ㅇ'),
           ),drawer: Drawer(//이게 그 삼선 눌르면 나오게 하는거
           child: ListView(
             padding: EdgeInsets.zero,
@@ -32,10 +32,16 @@ class _MyAppState extends State<MyApp> {
                   backgroundImage: AssetImage('assets/'),//assets 대신에 이미지 넣고 싶은거 넣으면 됨
                   backgroundColor: Colors.white,
                 ),
+                otherAccountsPictures: <Widget>[
+                  CircleAvatar(
+                    backgroundImage: AssetImage('assets/'),
+                    backgroundColor: Colors.white,
+                  )
+                ],
                 accountName: Text('정학'),
                 accountEmail: Text('njh20000@naver.com'),
                 onDetailsPressed: (){//이게 쪼꼬미 삼각형
-                  print('arrow');
+                  print('arrow is click');
                 },
                 decoration: BoxDecoration(//박스 디자인
                     color:Colors.red[200],
@@ -44,7 +50,37 @@ class _MyAppState extends State<MyApp> {
                         bottomRight: Radius.circular(40.0)
                     )
                 ),
-              )
+              ),
+              ListTile(
+                leading: Icon(Icons.home,
+                color: Colors.grey[850],
+                ),
+                title: Text('Home'),
+                onTap: (){
+                  print('home');
+              },
+                trailing:Icon(Icons.add),
+              ),
+              ListTile(
+                leading: Icon(Icons.settings,
+                  color: Colors.grey[850],
+                ),
+                title: Text('setting'),
+                onTap: (){
+                  print('setting');
+                },
+                trailing:Icon(Icons.add),
+              ),
+              ListTile(
+                leading: Icon(Icons.question_answer,
+                  color: Colors.grey[850],
+                ),
+                title: Text('Q&A'),
+                onTap: (){
+                  print('Q&A');
+                },
+                trailing:Icon(Icons.add),
+              ),
             ],
           ),
         ),
