@@ -20,9 +20,9 @@ class _MyAppState extends State<MyApp> {
           appBar: AppBar(
               backgroundColor: Colors.red[200],
               actions: [IconButton(onPressed: () {}, icon: Icon(Icons.notifications))],
-              title: Text('바보')),
+              title: Text('가보자')),
           body: Container(
-            child: Text('어어'),
+            child: Text('화이팅'),
           ),drawer: Drawer(//이게 그 삼선 눌르면 나오게 하는거
           child: ListView(
             padding: EdgeInsets.zero,
