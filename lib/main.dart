@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
               accountEmail: Text('njh20000@naver.com'),
               onDetailsPressed: () {
                 //이게 쪼꼬미 삼각형
-                print('arrow is click');
+                print('click');
               },
               decoration: BoxDecoration(
                   //박스 디자인
