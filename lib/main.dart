@@ -33,13 +33,12 @@ class _MyAppState extends State<MyApp> {
           children: <Widget>[
             UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('assets/'),
+                backgroundImage: AssetImage('assets/me.jpeg'),
                 //assets 대신에 이미지 넣고 싶은거 넣으면 됨
-                backgroundColor: Colors.white,
               ),
               otherAccountsPictures: <Widget>[
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/'),
+                  backgroundImage: AssetImage('assets/IMG_4086.jpeg'),
                   backgroundColor: Colors.white,
                 )
               ],
