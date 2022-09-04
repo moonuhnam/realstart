@@ -1,5 +1,7 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:naver_map_plugin/naver_map_plugin.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +27,7 @@ class _MyAppState extends State<MyApp> {
           ],
           title: Text('가보자')),
       body: Container(
-        child: Text('화이ㅇ'),
+        child: NaverMap(),
       ),
       drawer: Drawer(
         //이게 그 삼선 눌르면 나오게 하는거
