@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:naver_map_plugin/naver_map_plugin.dart';
+import 'naverMapShow.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,9 +27,9 @@ class _MyAppState extends State<MyApp> {
             IconButton(onPressed: () {}, icon: Icon(Icons.notifications))
           ],
           title: Text('가보자')),
-      body: Container(
-        child: NaverMap(),
-      ),
+
+      body: NaverMapShow(),
+
       drawer: Drawer(
         //이게 그 삼선 눌르면 나오게 하는거
         child: ListView(
